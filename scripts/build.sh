@@ -33,6 +33,7 @@ npx babel --env-name commonjsBrowser src --source-root src --out-dir "$DIR/commo
 
 # Transpile ESM versions of files for the browser
 npx babel --env-name esmBrowser src --source-root src --out-dir "$DIR/esm-browser" --copy-files --quiet
+echo "{ \"type\": \"module\" }" > "$DIR/esm-browser/package.json"
 
 # Transpile ESM versions of files for node
 npx babel --env-name esmNode src --source-root src --out-dir "$DIR/esm-node" --copy-files --quiet
