@@ -1,6 +1,5 @@
 *.tgz
 browserstack.err
-dist/
 local.log
 node_modules/
 vscode/
